@@ -6,7 +6,7 @@ class Pen{
         System.out.println("Write Something");
     }
 }
-class Student{
+class Students{
     String name;
     int age;
 
@@ -15,13 +15,13 @@ class Student{
         System.out.println(this.age);
     }
 
-    Student(Student s2){
+    Students(Students s2){
         this.name=s2.name;
         this.age=s2.age;
     }
-    Student(){
-        
-    }
+    Students(){
+        System.out.println("Constructor is called here");
+     }
 
 }
 public class Oops{
@@ -36,11 +36,12 @@ public static void main(String[] args){
     //pen2.type="ballpoint";
     //pen2.write();
     //Student s1=new Student("shreya",21);
-    Student s1=new Student();
+    Students s1=new Students();
     s1.name="Shreya";
     s1.age=21;
 
-    Student s2=new Student(s1);
-    s2.printInfo();
+     
+    s1.printInfo();
+
 }
 }
